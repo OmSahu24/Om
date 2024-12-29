@@ -54,3 +54,39 @@ button:hover{
     cursor: pointer;
     color: red;
 }
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(bg.png);
+            background-color: black;
+
+    }
+        .main{
+            background-image: url(bg.png);
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            position: relative;
+        }
+    .box {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .display {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    .buttons{
+        width: 100%;
+        gap: 0px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 1rem;
+        width: 80px;
+    }
+}
