@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.main {
+    background-image: url(bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Box */
+.box {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 2px solid black;
+    width: 440px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Display */
+.display {
+    width: 100%;
+    height: 15vh;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Special Classes */
+button.num-buttons {
+    background-color: rgba(54, 54, 54, 0.7);
+}
+
+button.op-buttons {
+    background-color: rgba(62, 62, 62, 0.7);
+}
+
+button.sign-buttons {
+    background-color: rgba(58, 58, 58, 0.7);
+}
